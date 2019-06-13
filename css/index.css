@@ -1,0 +1,61 @@
+hr{
+    height: 2px;
+}
+figure{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+figcaption{
+    background-color: white;
+    min-height: 48px;
+    border-radius: 0 0 8px 8px;
+}
+
+.gallery{
+    margin-top: 36px;
+}
+.caption{
+    background-color: rgb(0, 0, 0);
+}
+.image-card{
+    margin-top: 36px
+}
+.image {
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+  
+  /* [2] Transition property for smooth transformation of images */
+  .image img {
+    transition: transform .5s ease;
+  }
+  
+  /* [3] Finally, transforming the image when container gets hovered */
+  .image:hover img {
+    transform: scale(1.5);
+  }
+
+#top-layer{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    scroll-behavior: unset;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 100vh;
+}
+.disabled{
+    display: none;
+}
+.pic-box{
+    height: 80%;
+}
+.inner-gallery{ 
+    bottom: 100vh;
+    left: 0;
+    height: 20%;
+}
+.inner-album{
+    width: 200px;
+    height: auto;
+}

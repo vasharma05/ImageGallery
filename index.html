@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="Bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/index.css" type="text/css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet"> 
+</head>
+<body>
+
+    <div class="container-fluid disabled" id="top-layer">
+        <div class="row pic-box">
+            <div class="col-md-1 offset-md-2 col-1 align-self-center">
+                <img class="img-fluid" id="previous" src="img/left.png">
+            </div>
+            <div class="col-md-6 col-10 align-self-center">
+                <figure>
+                    <img class="img-fluid" id="slideshow" src="img/IMG-20170906-WA0005.jpg">
+                    <figcaption>Caption</figcaption>
+                </figure>
+            </div>
+            <div class="col-1 align-self-center">
+                <img src="img/right.png" class="img-fluid" id="next">
+            </div>    
+        </div>
+
+
+        
+    </div>
+    <div class="container">
+        <img src="img/tcil.png" width="150px" height="150px">
+    </div>
+    <div class="container" style="text-align: center">
+        <h2>Photo Gallery</h2>
+        <hr>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 image-card">
+                <div class="card">
+                    <div class="image">
+                        <img class="card-img-top" src="img/IMG-20170906-WA0005.jpg" class="img-fluid">
+                    </div>
+                    <div class="card-body">
+                        <h5>Card Title</h5>
+                        <p>Card Body</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-4 image-card">
+                    <div class="card">
+                        <div class="image">
+                            <img class="card-img-top" src="img/IMG-20170906-WA0005.jpg" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5>Card Title</h5>
+                            <p>Card Body</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4 image-card">
+                        <div class="card">
+                            <div class="image">
+                                <img class="card-img-top" src="img/IMG-20170906-WA0005.jpg" class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h5>Card Title</h5>
+                                <p>Card Body</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-4 image-card">
+                            <div class="card">
+                                <div class="image">
+                                    <img class="card-img-top" src="img/IMG-20170906-WA0005.jpg" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <h5>Card Title</h5>
+                                    <p>Card Body</p>
+                                </div>
+                            </div>
+                        </div>
+        </div>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script>
+        var image = document.getElementsByClassName('image-card');
+        $(document).ready(()=>{
+                $('.image-card').click(()=>{
+                    $('#top-layer').toggleClass("disabled");
+                });
+            $('h5').click(()=>{
+                console.log("Hi");
+            });
+            $('.pic-box').click(()=>{
+                $('#top-layer').toggleClass("disabled");  
+            });
+        
+            
+        }); 
+        
+    </script>
+</body>
+</html>
