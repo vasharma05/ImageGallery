@@ -13,37 +13,55 @@
 
     <div class="container-fluid disabled" id="top-layer">
         <div class="row pic-box">
-            <div class="col-md-1 offset-md-2 col-1 align-self-center">
+            <div class="col-md-1 offset-md-2 align-self-center">
                 <img class="img-fluid" id="previous" src="img/left.png">
             </div>
-            <div class="col-md-6 col-10 align-self-center">
+            <div class="col-md-6 align-self-center">
                 <figure>
                     <img class="img-fluid" id="slideshow" src="img/IMG-20170906-WA0005.jpg">
                     <figcaption>Caption</figcaption>
                 </figure>
             </div>
             <div class="col-1 align-self-center">
-                <img src="img/right.png" class="img-fluid" id="next">
+                <img class="img-fluid" src="img/right.png" id="next">
             </div>    
         </div>
 
-
-        
+        <div class="container-fluid" style="background-color: rgba(0, 0, 0, 0.4)">
+            <div class="container" id="scrollmenu">
+                <img src="img/IMG-20170906-WA0005.jpg" width="200px">
+                <img src="img/IMG-20170906-WA0005.jpg" width="200px">
+                <img src="img/IMG-20170906-WA0005.jpg" width="200px">
+                <img src="img/IMG-20170906-WA0005.jpg" width="200px"">
+                <img src="img/IMG-20170906-WA0005.jpg" width="200px">
+                <img src="img/IMG-20170906-WA0005.jpg" width="200px">
+                <img src="img/IMG-20170906-WA0005.jpg" width="200px">
+                <img src="img/IMG-20170906-WA0005.jpg" width="200px"">
+                <img src="img/IMG-20170906-WA0005.jpg" width="200px">
+                <img src="img/IMG-20170906-WA0005.jpg" width="200px">
+                <img src="img/IMG-20170906-WA0005.jpg" width="200px">
+                <img src="img/IMG-20170906-WA0005.jpg" width="200px"">
+                <img src="img/IMG-20170906-WA0005.jpg" width="200px">
+                <img src="img/IMG-20170906-WA0005.jpg" width="200px">
+                <img src="img/IMG-20170906-WA0005.jpg" width="200px">
+                <img src="img/IMG-20170906-WA0005.jpg" width="200px"">                        
+            </div>
+        </div>
     </div>
     <div class="container">
         <img src="img/tcil.png" width="150px" height="150px">
     </div>
     <div class="container" style="text-align: center">
-        <h2>Photo Gallery</h2>
+        <h2 id='abc'>Photo Gallery</h2>
         <hr>
     </div>
 
     <div class="container">
         <div class="row">
             <div class="col-md-4 image-card">
-                <div class="card">
+                <div class="card" onclick="inner_gallery('Bed',4)"">
                     <div class="image">
-                        <img class="card-img-top" src="img/IMG-20170906-WA0005.jpg" class="img-fluid">
+                        <img class="card-img-top" src="img/Bed1.jpg" class="img-fluid">
                     </div>
                     <div class="card-body">
                         <h5>Card Title</h5>
@@ -53,9 +71,9 @@
                 
             </div>
             <div class="col-md-4 image-card">
-                    <div class="card">
+                    <div class="card" onclick="inner_gallery('GoldenTemple',8)" >
                         <div class="image">
-                            <img class="card-img-top" src="img/IMG-20170906-WA0005.jpg" class="img-fluid">
+                            <img class="card-img-top" src="img/GoldenTemple1.jpg" class="img-fluid">
                         </div>
                         <div class="card-body">
                             <h5>Card Title</h5>
@@ -93,22 +111,6 @@
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
-    <script>
-        var image = document.getElementsByClassName('image-card');
-        $(document).ready(()=>{
-                $('.image-card').click(()=>{
-                    $('#top-layer').toggleClass("disabled");
-                });
-            $('h5').click(()=>{
-                console.log("Hi");
-            });
-            $('.pic-box').click(()=>{
-                $('#top-layer').toggleClass("disabled");  
-            });
-        
-            
-        }); 
-        
-    </script>
+    <script src="js/index.js"></script>
 </body>
 </html>
