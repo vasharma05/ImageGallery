@@ -3,14 +3,10 @@ var image = document.getElementsByClassName('image-card');
                 $('.image-card').click(()=>{
                     $('#top-layer').toggleClass("disabled");
                 });
-            $('h5').click(()=>{
-                console.log("Hi");
-            });
             $('.pic-box').click(()=>{
                 $('#top-layer').toggleClass("disabled");  
             });
-            
-            
+                        
         }); 
 
 
@@ -27,8 +23,15 @@ function inner_gallery(subs,total){
         j=i+1;
         var img = document.createElement("img");
         img.src='img/'+subs+j+".jpg";
+        img.classList.add("inner-pics");
+        img.classList.add("img-fluid");
         img.style.width="200px"
         scrollmenu.appendChild(img);
+        
     }
+
+    $('.inner-pics').click((e)=>{
+        $('#slideshow').attr("src", e.target.src);
+    });
 }
 
