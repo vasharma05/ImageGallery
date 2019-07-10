@@ -1,3 +1,37 @@
+<!-- 
+Copy and Paste This Section
+
+Change the word Subs with the folder Name in the below section w/o interfaring the "" or ''
+
+In the Folder rename the pictures with the folder name using the F2 button
+The picture name should be in the format FolderName ().jpg
+
+All the pictures should be in jpg Format
+
+In the Class of the Span change Subs with folder name just before "caption"
+
+In the <div class="image"> change Caption 1 with the Caption of the First Picture
+
+    <article class="col-md-4 image-card">
+        <div class="card" onclick="inner_gallery("Subs",4)">
+            <div class="image">
+                <img class="card-img-top" src="img/Subs/Subs (1).jpg" class="img-fluid" alt="Subs">
+            </div>
+            <div class="card-body">
+                <h5>Card Title</h5>
+                <p>Card Body</p>
+            </div>
+        </div>
+        <div style="display: none;">
+            <span class="Subscaption">Caption 1</span>
+            <span class="Subscaption">Caption 2</span>
+            <span class="Subscaption">Caption 3</span>
+            <span class="Subscaption">Caption 4</span>
+        </div>    
+    </article>
+ -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,10 +82,10 @@
         <div class="row">
 
 
-            <div class="col-md-4 image-card">
+            <article class="col-md-4 image-card">
                 <div class="card" onclick="inner_gallery('Bed',4)">
                     <div class="image">
-                        <img class="card-img-top" src="img/Bed/Bed (1).jpg" class="img-fluid">
+                        <img class="card-img-top" src="img/Bed/Bed (1).jpg" class="img-fluid" alt="Caption 1">
                     </div>
                     <div class="card-body">
                         <h5>Card Title</h5>
@@ -64,62 +98,66 @@
                     <span class="Bedcaption">Caption 3</span>
                     <span class="Bedcaption">Caption 4</span>
                 </div>    
-            </div>
+            </article>
 
 
-            <div class="col-md-4 image-card">
-                    <div class="card" onclick="inner_gallery('GoldenTemple',6)" >
-                        <div class="image">
-                            <img class="card-img-top" src="img/GoldenTemple1.jpg" class="img-fluid">
-                        </div>
-                        <div class="card-body">
-                            <h5>Card Title</h5>
-                            <p>Card Body</p>
-                        </div>
+            <article class="col-md-4 image-card">
+                <div class="card" onclick="inner_gallery('GoldenTemple',6)" >
+                    <div class="image">
+                        <img class="card-img-top" src="img/GoldenTemple1.jpg" class="img-fluid" alt="Caption 1">
                     </div>
-                    <div style="display: none;">
-                        <span class="GoldenTemplecaption">Caption 1</span>
-                        <span class="GoldenTemplecaption">Caption 2</span>
-                        <span class="GoldenTemplecaption">Caption 3</span>
-                        <span class="GoldenTemplecaption">Caption 4</span>
-                        <span class="GoldenTemplecaption">Caption 5</span>
-                        <span class="GoldenTemplecaption">Caption 6</span>
+                    <div class="card-body">
+                        <h5>Card Title</h5>
+                        <p>Card Body</p>
                     </div>
                 </div>
-                <div class="col-md-4 image-card">
-                        <div class="card">
-                            <div class="image">
-                                <img class="card-img-top" src="img/IMG-20170906-WA0005.jpg" class="img-fluid">
-                            </div>
-                            <div class="card-body">
-                                <h5>Card Title</h5>
-                                <p>Card Body</p>
-                            </div>
-                        </div>
-                        <div style="display: none;">
-                            <span class="caption">Caption 1</span>
-                            <span class="caption">Caption 2</span>
-                            <span class="caption">Caption 3</span>
-                            <span class="caption">Caption 4</span>
-                        </div>
+                <div style="display: none;">
+                    <span class="GoldenTemplecaption">Caption 1</span>
+                    <span class="GoldenTemplecaption">Caption 2</span>
+                    <span class="GoldenTemplecaption">Caption 3</span>
+                    <span class="GoldenTemplecaption">Caption 4</span>
+                    <span class="GoldenTemplecaption">Caption 5</span>
+                    <span class="GoldenTemplecaption">Caption 6</span>
+                </div>
+            </article>
+
+            <article class="col-md-4 image-card">
+                <div class="card">
+                    <div class="image">
+                        <img class="card-img-top" src="img/IMG-20170906-WA0005.jpg" class="img-fluid" alt="Caption 1">
                     </div>
-                    <div class="col-md-4 image-card">
-                            <div class="card">
-                                <div class="image">
-                                    <img class="card-img-top" src="img/IMG-20170906-WA0005.jpg" class="img-fluid">
-                                </div>
-                                <div class="card-body">
-                                    <h5>Card Title</h5>
-                                    <p>Card Body</p>
-                                </div>
-                            </div>
-                            <div style="display: none;">
-                                <span class="caption">Caption 1</span>
-                                <span class="caption">Caption 2</span>
-                                <span class="caption">Caption 3</span>
-                                <span class="caption">Caption 4</span>
-                            </div>
+                    <div class="card-body">
+                        <h5>Card Title</h5>
+                        <p>Card Body</p>
                     </div>
+                </div>
+                <div style="display: none;">
+                    <span class="caption">Caption 1</span>
+                    <span class="caption">Caption 2</span>
+                    <span class="caption">Caption 3</span>
+                    <span class="caption">Caption 4</span>
+                </div>
+            </article>
+
+            <article class="col-md-4 image-card">
+                <div class="card">
+                    <div class="image">
+                        <img class="card-img-top" src="img/IMG-20170906-WA0005.jpg" class="img-fluid" alt="Caption 1">
+                    </div>
+                    <div class="card-body">
+                        <h5>Card Title</h5>
+                        <p>Card Body</p>
+                    </div>
+                </div>
+                <div style="display: none;">
+                    <span class="caption">Caption 1</span>
+                    <span class="caption">Caption 2</span>
+                    <span class="caption">Caption 3</span>
+                    <span class="caption">Caption 4</span>
+                </div>
+            </article>
+
+            <!-- Copy the Article Above this line -->
         </div>
     </div>
     
