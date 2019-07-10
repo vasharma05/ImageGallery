@@ -47,24 +47,7 @@ figcaption{
 .disabled{
     display: none;
 }
-.pic-box{
-    height: 80%;
-}
-.inner-gallery{ 
-    bottom: 100vh;
-    left: 0;
-    height: 20%;
-}
-#scrollmenu {
-    overflow: auto;
-    white-space: nowrap;
-  }
   
-
-#scrollmenu img {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
+  #slides img{
+      width: 100%;
   }
