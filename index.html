@@ -1,5 +1,5 @@
 <!-- 
-Copy and Paste This Section
+Before Copy and Paste of This Section, read the below lines
 
 Change the word Subs with the folder Name in the below section w/o interfaring the "" or ''
 
@@ -12,17 +12,18 @@ In the Class of the Span change Subs with folder name just before "caption"
 
 In the <div class="image"> change Caption 1 with the Caption of the First Picture
 
-    <article class="col-md-4 image-card">
-        <div class="card" onclick="inner_gallery("Subs",4)">
+    <article class="col-md-4 image-card" onclick="inner_gallery("Subs",4)">
+        <p style="text-align: center; background-color: rgba(0, 0, 0, 0.4); padding: 0; margin: 0; color: white" class="bg-primary">01/12/2019</p>
+        <div class="card" >
             <div class="image">
-                <img class="card-img-top" src="img/Subs/Subs (1).jpg" class="img-fluid" alt="Subs">
+                <img class="card-img-top" src="img/Subs/Subs (1).jpg" class="img-fluid" alt="Caption 1">
             </div>
             <div class="card-body">
                 <h5>Card Title</h5>
                 <p>Card Body</p>
             </div>
         </div>
-        <div style="display: none;">
+        <div class="caption" style="display: none;">
             <span class="Subscaption">Caption 1</span>
             <span class="Subscaption">Caption 2</span>
             <span class="Subscaption">Caption 3</span>
@@ -46,8 +47,9 @@ In the <div class="image"> change Caption 1 with the Caption of the First Pictur
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
 </head>
 <body>
-
-    <div class="container-fluid disabled row" id="top-layer">
+    <img id="cancel" class="img-fluid ml-auto disabled" src="img/x.png" width="25px">
+    <div class="container-fluid disabled row" id="top-layer" onkeypress="closeFunction(e)">
+        
         <div id="carouselExampleControls" class="carousel slide col-md-8 offset-md-2 my-auto" data-ride="carousel">
             <ol class="carousel-indicators" id="indicators">
                 
@@ -82,8 +84,9 @@ In the <div class="image"> change Caption 1 with the Caption of the First Pictur
         <div class="row">
 
 
-            <article class="col-md-4 image-card">
-                <div class="card" onclick="inner_gallery('Bed',4)">
+            <article class="col-md-3 image-card" onclick="inner_gallery('Bed',4)">
+                <div class="card">
+                        <p style="text-align: center; background-color: rgba(0, 0, 0, 0.4); padding: 0; margin: 0; color: white" class="bg-primary">01/12/2019</p>
                     <div class="image">
                         <img class="card-img-top" src="img/Bed/Bed (1).jpg" class="img-fluid" alt="Caption 1">
                     </div>
@@ -92,7 +95,7 @@ In the <div class="image"> change Caption 1 with the Caption of the First Pictur
                         <p>Card Body</p>
                     </div>
                 </div>
-                <div style="display: none;">
+                <div class="caption" style="display: none;">
                     <span class="Bedcaption">Caption 1</span>
                     <span class="Bedcaption">Caption 2</span>
                     <span class="Bedcaption">Caption 3</span>
@@ -101,17 +104,17 @@ In the <div class="image"> change Caption 1 with the Caption of the First Pictur
             </article>
 
 
-            <article class="col-md-4 image-card">
-                <div class="card" onclick="inner_gallery('GoldenTemple',6)" >
+            <article class="col-md-3 image-card" onclick="inner_gallery('GoldenTemple',6)">
+                <div class="card"  >
                     <div class="image">
-                        <img class="card-img-top" src="img/GoldenTemple1.jpg" class="img-fluid" alt="Caption 1">
+                        <img class="card-img-top" src="img/GoldenTemple/GoldenTemple (1).jpg" class="img-fluid" alt="Caption 1">
                     </div>
                     <div class="card-body">
                         <h5>Card Title</h5>
                         <p>Card Body</p>
                     </div>
                 </div>
-                <div style="display: none;">
+                <div class="caption" style="display: none;">
                     <span class="GoldenTemplecaption">Caption 1</span>
                     <span class="GoldenTemplecaption">Caption 2</span>
                     <span class="GoldenTemplecaption">Caption 3</span>
@@ -121,8 +124,9 @@ In the <div class="image"> change Caption 1 with the Caption of the First Pictur
                 </div>
             </article>
 
-            <article class="col-md-4 image-card">
+            <article class="col-md-3 image-card">
                 <div class="card">
+                        <p style="text-align: center; background-color: rgba(0, 0, 0, 0.4); padding: 0; margin: 0; color: white" class="bg-primary">01/12/2019</p>                    
                     <div class="image">
                         <img class="card-img-top" src="img/IMG-20170906-WA0005.jpg" class="img-fluid" alt="Caption 1">
                     </div>
@@ -131,7 +135,7 @@ In the <div class="image"> change Caption 1 with the Caption of the First Pictur
                         <p>Card Body</p>
                     </div>
                 </div>
-                <div style="display: none;">
+                <div class="caption" style="display: none;">
                     <span class="caption">Caption 1</span>
                     <span class="caption">Caption 2</span>
                     <span class="caption">Caption 3</span>
@@ -139,7 +143,8 @@ In the <div class="image"> change Caption 1 with the Caption of the First Pictur
                 </div>
             </article>
 
-            <article class="col-md-4 image-card">
+            <article class="col-md-3 image-card">
+                <p style="text-align: center; background-color: rgba(0, 0, 0, 0.4); padding: 0; margin: 0; color: white" class="bg-primary">01/12/2019</p>
                 <div class="card">
                     <div class="image">
                         <img class="card-img-top" src="img/IMG-20170906-WA0005.jpg" class="img-fluid" alt="Caption 1">
@@ -149,7 +154,7 @@ In the <div class="image"> change Caption 1 with the Caption of the First Pictur
                         <p>Card Body</p>
                     </div>
                 </div>
-                <div style="display: none;">
+                <div class="caption" style="display: none;">
                     <span class="caption">Caption 1</span>
                     <span class="caption">Caption 2</span>
                     <span class="caption">Caption 3</span>

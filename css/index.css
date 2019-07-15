@@ -11,12 +11,17 @@ figcaption{
     min-height: 48px;
     border-radius: 0 0 8px 8px;
 }
-
+#cancel{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    z-index: 9;
+}
 .gallery{
     margin-top: 36px;
 }
-.caption{
-    background-color: rgb(0, 0, 0);
+.carousel-caption{
+    background-color: rgba(0, 0, 0,0.7);
 }
 .image-card{
     margin-top: 36px
@@ -35,6 +40,14 @@ figcaption{
     transform: scale(1.5);
   }
 
+
+.card:hover{
+    box-shadow: 0 0 2px black;
+}
+.card-body{
+    overflow: auto;
+}
+
 #top-layer{
     background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
@@ -48,6 +61,6 @@ figcaption{
     display: none;
 }
   
-  #slides img{
-      width: 100%;
-  }
+#slides img{
+    width: 100%;
+}
